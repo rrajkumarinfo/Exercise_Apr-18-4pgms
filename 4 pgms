@@ -1,0 +1,194 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1505,1540,1575,1610,1645,1680,1715,1750,1785,1820,1855,1890,1925,1960,1995,2030,2065,2100,2135,2170,2205,2240,2275,2310,2345,2380,2415,2450,2485,2520,2555,2590,2625,2660,2695,"
+     ]
+    }
+   ],
+   "source": [
+    "## Pgm 1. Write a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).\n",
+    "\n",
+    "for i in range (1500,2700):\n",
+    "    if (i%7==0 and i%5==0):\n",
+    "        {\n",
+    "   print(i, end = \",\")  \n",
+    "    \n",
+    "        }   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 244,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "*\n",
+      "**\n",
+      "***\n",
+      "****\n",
+      "*****\n",
+      "****\n",
+      "***\n",
+      "**\n",
+      "*\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Pgm 2. Write a Python program to construct the following pattern, using a nested for loop.\n",
+    "n = 5\n",
+    "a='*'\n",
+    "for i in range(0, n):  \n",
+    "        for j in range(0, i + 1):  \n",
+    "            # printing stars  \n",
+    "            print(a, end=\"\")       \n",
+    "          # ending line after each row  \n",
+    "        print()  \n",
+    "for k in range(n,0,-1):  \n",
+    "        for l in range(0, k-1):  \n",
+    "            # printing stars  \n",
+    "            print(a, end=\"\")       \n",
+    "          # ending line after each row  \n",
+    "        print()  \n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 309,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Number of even numbers: 4\n",
+      "Number of Odd numbers: 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "## 3. Write a Python program to count the number of even and odd numbers from a series of numbers.\"\n",
+    "#method 1\n",
+    "a=[1,2,3,4,5,6,7,8,9]\n",
+    "n=len(a)\n",
+    "even=0\n",
+    "odd=0\n",
+    "for i in range (0,n,1):\n",
+    "    if (a[i] % 2 == 0):\n",
+    "        even+=1\n",
+    "        \n",
+    "    else:\n",
+    "         odd+=1\n",
+    "            \n",
+    "print(\"Number of even numbers:\",even)\n",
+    "print(\"Number of Odd numbers:\",odd)\n",
+    "\n",
+    "            \n",
+    "\n",
+    "        \n",
+    "      \n",
+    "\n",
+    "                \n",
+    "        \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 310,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Even numbers are b= [2, 4, 6, 8] and Number of even numbers: 4\n",
+      "Odd numbers are c= [1, 3, 5, 7, 9] and Number of Odd numbers: 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "## 3. Write a Python program to count the number of even and odd numbers from a series of numbers.\"\n",
+    "#method 2\n",
+    "a=[1,2,3,4,5,6,7,8,9]\n",
+    "n=len(a)\n",
+    "b=[]\n",
+    "c=[]\n",
+    "for i in range (0,n,1):\n",
+    "    if (a[i] % 2 == 0):\n",
+    "        b.append(a[i])\n",
+    "        \n",
+    "    else:\n",
+    "         c.append(a[i])\n",
+    "            \n",
+    "print(\"Even numbers are b=\",b,\"and Number of even numbers:\",len(b))\n",
+    "print(\"Odd numbers are c=\",c,\"and Number of Odd numbers:\",len(c))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 345,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "200,202,204,206,208,220,222,224,226,228,240,242,244,246,248,260,262,264,266,268,280,282,284,286,288,400\n"
+     ]
+    }
+   ],
+   "source": [
+    "## 4. Write a Python program to find numbers between 100 and 400 (both included) where each digit of a number is an even number. The numbers obtained should be printed in a comma-separated sequence.\n",
+    "a=[]\n",
+    "for i in range (100,401,2):\n",
+    "    x=str(i)\n",
+    "    if(int(x[0])%2==0) and (int(x[1]) %2==0) and (int(x[2])%2==0):\n",
+    "        a.append(x)   \n",
+    "\n",
+    "'''print(a,end=\",\")'''\n",
+    "print( \",\".join(a))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
